@@ -1,0 +1,43 @@
+{
+    "name": "aaxc/space-invaders",
+    "type": "project",
+    "description": "Space Invaders game built with PHP 8",
+    "keywords": ["space-invaders", "game", "php"],
+    "homepage": "https://github.com/aaxc/space-invaders",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dainis Abols",
+            "email": "dainis@dainisabols.lv"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "league/container": "^4.4",
+        "nikic/fast-route": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "SpaceInvader\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": [
+            "@phpunit"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "platform": {
+            "php": "8.1"
+        }
+    },
+    "version": "0.1.0"
+}
